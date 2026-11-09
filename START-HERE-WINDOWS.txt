@@ -1,0 +1,21 @@
+THREADLINE STORE - WINDOWS ONE CLICK START (v2.1.1)
+
+1) Extract the WHOLE ZIP: right-click -> Extract All...
+2) Install Node.js 22.13 or newer from https://nodejs.org/ if missing.
+3) Double-click START-WEBSITE.bat inside this folder.
+4) The website opens at http://localhost:5000 in your browser after its backend starts.
+5) Leave the black server window open while using the website.
+
+No npm install needed for the supplied offline runtime on Windows.
+If Windows shows a SmartScreen warning, check the source before trusting/running scripts.
+This package includes JavaScript dependencies (not Node.js itself).
+
+If it does not start:
+- Run command 'node -v' to check Node version (at least v22.13.0).
+- Open folder in VS Code -> Terminal and run: node tools/start-local.js
+- Send the full terminal error text or screenshot for an exact fix.
+- Check whether some app already uses port 5000. Set PORT=5001 in backend/.env if needed.
+- Do NOT open frontend/index.html directly; use localhost URL.
+
+Pay attention: localhost is only accessible on your own PC. A public website domain still needs hosting.
+Demo products and COD are for testing. Live Gemini AI requires your own secret key in backend/.env; card payments require merchant keys and a separately installed Safepay SDK.

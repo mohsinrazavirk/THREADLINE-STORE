@@ -1,0 +1,17 @@
+# Starter blueprint. IMPORTANT: default ephemeral filesystem is NOT suitable for real order data.
+# Attach a persistent disk in your paid Render service and define DB_PATH before taking orders.
+services:
+  - type: web
+    name: threadline-store
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      - key: PUBLIC_BASE_URL
+        sync: false
+      - key: DB_PATH
+        sync: false

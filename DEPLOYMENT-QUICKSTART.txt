@@ -1,0 +1,20 @@
+THREADLINE STORE — QUICK START
+
+A) RUN ON YOUR WINDOWS COMPUTER:
+1. Unzip Threadline-Store-Updated.zip and open Threadline-Store in VS Code.
+2. Run: npm install
+3. Copy backend/.env.example to backend/.env and set a random JWT_SECRET.
+4. Run: npm start
+5. Visit http://localhost:5000 in Chrome (LOCAL ONLY).
+
+B) PUBLISH WITHOUT GITHUB:
+Read RAILWAY-DEPLOY-WITHOUT-GITHUB.md in this ZIP. Set up your own Railway
+account + persistent volume and use railway up and railway domain.
+This yields an actual public website URL after successful deployment.
+
+COD is implemented locally. Live card payments need your Safepay merchant
+approval + keys. The mini guide works offline from AI services as rules;
+for true AI-generated responses add the Gemini API key.
+
+Products and web-linked photos are DEMO content. Replace them, add policies
+and contact information, and test payments before opening to customers.
